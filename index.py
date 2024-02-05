@@ -71,5 +71,8 @@ def realizar_venta():
             print(f"Total de la venta: ${venta.calcular_total()}")
         else:
             print("No se realizaron ventas.")
+     else:
+        print("Cliente no encontrado.")
+
 
 
