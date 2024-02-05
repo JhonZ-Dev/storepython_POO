@@ -105,6 +105,16 @@ while True:
     print("4. Salir")
 
     opcion = input("Seleccione una opción: ")
+    if opcion == '1':
+        agregar_producto()
+    elif opcion == '2':
+        listar_productos()
+    elif opcion == '3':
+        realizar_venta()
+    elif opcion == '4':
+        break
+    else:
+        print("Opción no válida. Por favor, ingrese una opción válida.")
 
 
 
