@@ -41,3 +41,8 @@ def agregar_producto():
 
     productos.append(producto)
     print("Producto agregado con éxito.")
+
+def listar_productos():
+    print("Lista de productos:")
+    for producto in productos:
+        print(producto.mostrar_informacion())
