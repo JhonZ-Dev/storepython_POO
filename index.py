@@ -25,3 +25,5 @@ class Venta:
         self.id_venta = id_venta
         self.cliente = cliente
         self.productos = productos
+    def calcular_total(self):
+        return sum(producto.precio for producto in self.productos)
