@@ -73,6 +73,10 @@ def realizar_venta():
             print("No se realizaron ventas.")
      else:
         print("Cliente no encontrado.")
-
+def buscar_cliente(id_cliente):
+    for cliente in clientes:
+        if cliente.id_cliente == id_cliente:
+            return cliente
+    return None
 
 
