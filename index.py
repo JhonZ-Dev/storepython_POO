@@ -63,5 +63,13 @@ def realizar_venta():
                 producto.stock -= 1
             else:
                 print("Producto no encontrado o sin stock disponible.")
+        if productos_venta:
+            id_venta = len(ventas) + 1
+            venta = Venta(id_venta, cliente, productos_venta)
+            ventas.append(venta)
+            print("Venta realizada con éxito.")
+            print(f"Total de la venta: ${venta.calcular_total()}")
+        else:
+            print("No se realizaron ventas.")
 
 
