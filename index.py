@@ -20,3 +20,8 @@ class Cliente:
         self.nombre = nombre
         self.direccion = direccion
         self.email = email
+class Venta:
+    def __init__(self, id_venta, cliente, productos):
+        self.id_venta = id_venta
+        self.cliente = cliente
+        self.productos = productos
