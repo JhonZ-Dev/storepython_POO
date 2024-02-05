@@ -104,5 +104,8 @@ while True:
     print("3. Realizar Venta")
     print("4. Salir")
 
+    opcion = input("Seleccione una opción: ")
+
+
 
 
