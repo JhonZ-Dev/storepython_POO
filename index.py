@@ -27,3 +27,9 @@ class Venta:
         self.productos = productos
     def calcular_total(self):
         return sum(producto.precio for producto in self.productos)
+def agregar_producto():
+    tipo_producto = input("Ingrese el tipo de producto (E para electrónico, cualquier otra tecla para estándar): ").upper()
+    id_producto = input("Ingrese el ID del producto: ")
+    nombre = input("Ingrese el nombre del producto: ")
+    precio = float(input("Ingrese el precio del producto: "))
+    stock = int(input("Ingrese el stock inicial del producto: "))
