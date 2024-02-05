@@ -95,5 +95,14 @@ clientes = [
     Cliente("C002", "María López", "Avenida 456", "maria@gmail.com"),
     Cliente("C003", "Carlos Rodríguez", "Plaza Principal", "carlos@gmail.com")
 ]
+ventas = []
+# Menú principal
+while True:
+    print("\nSistema de Tienda")
+    print("1. Agregar Producto")
+    print("2. Listar Productos")
+    print("3. Realizar Venta")
+    print("4. Salir")
+
 
 
