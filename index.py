@@ -33,3 +33,11 @@ def agregar_producto():
     nombre = input("Ingrese el nombre del producto: ")
     precio = float(input("Ingrese el precio del producto: "))
     stock = int(input("Ingrese el stock inicial del producto: "))
+    if tipo_producto == 'E':
+        garantia_meses = int(input("Ingrese la garantía en meses: "))
+        producto = ProductoElectronico(id_producto, nombre, precio, stock, garantia_meses)
+    else:
+        producto = Producto(id_producto, nombre, precio, stock)
+
+    productos.append(producto)
+    print("Producto agregado con éxito.")
