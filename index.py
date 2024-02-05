@@ -57,4 +57,11 @@ def realizar_venta():
             id_producto = input("Ingrese el ID del producto a vender (0 para finalizar): ")
             if id_producto == '0':
                 break
+            producto = buscar_producto(id_producto)
+            if producto and producto.stock > 0:
+                productos_venta.append(producto)
+                producto.stock -= 1
+            else:
+                print("Producto no encontrado o sin stock disponible.")
+
 
