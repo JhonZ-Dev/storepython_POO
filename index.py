@@ -13,3 +13,10 @@ class ProductoElectronico(Producto):
         self.garantia_meses = garantia_meses
     def mostrar_informacion(self):
         return f"{super().mostrar_informacion()} - Garantía: {self.garantia_meses} meses"
+
+class Cliente:
+    def __init__(self, id_cliente, nombre, direccion, email):
+        self.id_cliente = id_cliente
+        self.nombre = nombre
+        self.direccion = direccion
+        self.email = email
